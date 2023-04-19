@@ -7,6 +7,9 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+/**
+ * JavaFX Aplikace
+ */
 public class TOSApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
@@ -20,6 +23,10 @@ public class TOSApplication extends Application {
         stage.show();
     }
 
+    /**
+     * Spuštění aplikace
+     * @param args - argumenty
+     */
     public static void main(String[] args) {
         launch();
     }

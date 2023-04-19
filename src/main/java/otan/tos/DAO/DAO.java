@@ -3,17 +3,21 @@ package otan.tos.DAO;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Rozhraní pro DAO
+ * @param <T> - typ objektu
+ */
 public interface DAO<T> {
     /**
      * Vrací objekt z DB podle ID
      * @param id - ID objektu v DB
-     * @return Optional<T>
+     * @return Optional<T> - objekt
      */
     Optional<T> get(long id);
 
     /**
      * Vrací všechny objekty z DB
-     * @return List<T>
+     * @return List<T> - objekty
      */
     List<T> getAll();
 

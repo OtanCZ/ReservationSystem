@@ -7,8 +7,17 @@ import java.util.List;
 import java.util.Optional;
 import java.sql.*;
 
+/**
+ * DAO pro Movie
+ */
 public class MovieDAO implements DAO<Movie> {
+    /**
+     * List pro ukládání filmů
+     */
     private List<Movie> movies = new ArrayList<>();
+    /**
+     * URL pro připojení k DB
+     */
     private String DB_URL = "jdbc:mysql://u9_sDOtaIOHTu:n0sNsFdDx4Gira%3D8IAxXf%2BiN@node1.otan.cz:3306/s9_maturita";
 
     /**

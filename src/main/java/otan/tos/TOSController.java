@@ -19,6 +19,9 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
+/**
+ * JavaFX Controller
+ */
 public class TOSController implements Initializable {
     private MovieDAO movieDOA = new MovieDAO();
     private SeatDAO seatDAO = new SeatDAO();

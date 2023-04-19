@@ -8,8 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * DAO pro Seat
+ */
 public class SeatDAO implements DAO<Seat> {
+    /**
+     * List pro ukládání sedadel
+     */
     private List<Seat> seats = new ArrayList<>();
+    /**
+     * URL pro připojení k DB
+     */
     private String DB_URL = "jdbc:mysql://u9_sDOtaIOHTu:n0sNsFdDx4Gira%3D8IAxXf%2BiN@node1.otan.cz:3306/s9_maturita";
 
 
@@ -39,7 +48,7 @@ public class SeatDAO implements DAO<Seat> {
     /**
      * Vrací všechny sedadla pro daný film
      * @param movie - Movie objekt ze kterého cheme získat sedadla
-     * @return List<Seat>
+     * @return List<Seat> - všechna sedadla pro daný film
      */
     public List<Seat> getAll(Movie movie) {
         seats.clear();
