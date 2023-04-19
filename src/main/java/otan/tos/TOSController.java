@@ -74,7 +74,6 @@ public class TOSController implements Initializable {
         seatGrid.setHgap(32);
         seatGrid.setVgap(32);
         seatGrid.setAlignment(Pos.CENTER);
-        seatGrid.setOnMouseClicked(this::onSeatClick);
 
         String letters = "ABCDE";
         for (int i = 0; i < 6; i++) {
@@ -119,7 +118,7 @@ public class TOSController implements Initializable {
 
     /**
      * nastavení ceny vstupenky
-     * @param event
+     * @param event - kliknutí na typ vstupenky
      */
     private void onTicketTypeClick(Event event) {
         if(ticketType.getSelectionModel().getSelectedItem().equals("Dospělý")) {
@@ -128,9 +127,6 @@ public class TOSController implements Initializable {
             tPrice = 175;
         }
         ticketPrice.setText("Cena za vstupenku: " + tPrice);
-    }
-
-    private void onSeatClick(MouseEvent mouseEvent) {
     }
 
     /**
